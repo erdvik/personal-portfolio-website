@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portofolio</title>
     <link rel="stylesheet" href="resources\css\style.css">
+    <link rel="stylesheet" href="resources\css\all.min.css">
 </head>
 <body>
     <nav>
         <h2 id="logo">Magnus Erdvik</h2>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+        <ul class="navigation-items">
+            <li class="navigation-item"><a href="#about-me">About Me</a></li>
+            <li class="navigation-item"><a href="#projects">Projects</a></li>
+            <li class="navigation-item"><a href="#skills">Skills</a></li>
+            <li class="navigation-item"><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -74,11 +75,33 @@
                 </summary>
                 <p class="project-description">
                     In this simple Javascript <a href="https://github.com/erdvik/credit-card-checker">project</a> I made a script that checks the validity of some
-                    mock credit card numbers. I think Javscript is an interesting language and it is used everywhere so its definetly good to have and unserstanding of.
+                    mock credit card numbers. I think Javscript is an interesting language and it is used everywhere, so it's good to have an understanding of.
                 </p>
             </details>
-        <section id="skills"></section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container">
+              <i class="fab fa-html5" alt="HTML"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-python"></i>
+              <i class="fab fa-java"></i>
+              <i class="fab fa-windows"></i>
+              <i class="fa fa-database"></i>
+              <i class="fab fa-git"></i>
+              <i class="fas fa-terminal"></i>
+              <i class="fab fa-github"></i>
+            </div>
+        </section>
+
+        <section>
+            <div class="centered-div">A centered div</div>
+        </section>
     </main>
+
+    <footer>
+        Thanks for looking at my personal portfolio site. Take a coockie and have a good day! <button>Take coockie</button>
+    </footer>
     
 </body>
 </html>
