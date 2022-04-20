@@ -21,8 +21,9 @@ body {
   --font-color: #323232;
 }
 
-.heart {
-  color: red;
+span {
+  font-weight: bold;
+  color: rgb(38, 93, 212);
 }
 
 h2 {
