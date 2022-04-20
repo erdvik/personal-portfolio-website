@@ -112,6 +112,7 @@ a {
   font-weight: 600;
 }
 
+
 #logo {
   margin: 0;
 }
@@ -129,7 +130,7 @@ a {
   margin-top: var(--spacing-1);
 }
 
-.centered-div {
+#centered-div {
     margin: auto;
     display: flex;
     justify-content: center;
