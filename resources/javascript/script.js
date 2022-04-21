@@ -6,7 +6,16 @@ let coockieImg = document.createElement('img');
 coockieImg.src = "resources/images/chocolate-chip-cookie-16.jpg"
 
 coockieButton.onclick = function() {
-    document.body.appendChild(coockieImg);
+
+    if (coockieButton.innerText == 'Take Coockie') {
+      document.body.appendChild(coockieImg);
+      coockieButton.innerText = 'Reject Coockie';
+    } else {
+      document.body.removeChild(coockieImg);
+      coockieButton.innerText = 'Take Coockie';
+    }
+
+    
 }
 
 let = darkModeButton = document.getElementById('dark-mode-button');
