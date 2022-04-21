@@ -12,9 +12,18 @@ coockieButton.onclick = function() {
 let = darkModeButton = document.getElementById('dark-mode-button');
 
 darkModeButton.onclick = function() {
-    document.body.style.backgroundColor = 'black';
-    document.body.style.color = 'white';
-}
+
+    if (document.body.style.backgroundColor != 'black') {
+      document.body.style.backgroundColor = 'black';
+      document.body.style.color = 'white';
+      darkModeButton.innerText = 'White Mode';
+    } else {
+      document.body.style.backgroundColor = 'white';
+      document.body.style.color = 'black';
+      darkModeButton.innerText = 'Dark Mode';
+    }
+  }
+
 
 
 const timeContainer = document.getElementById("time-container");
